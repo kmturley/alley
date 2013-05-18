@@ -1,4 +1,0 @@
-/*
-	Simple Responsive Template
-	by kmturley
-*/

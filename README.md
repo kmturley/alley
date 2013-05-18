@@ -43,8 +43,6 @@ Layout css example:
     .col {
         display: table-cell;
         vertical-align: top;
-        border-spacing: 0 0;
-        margin: 0;
     }
     
 
