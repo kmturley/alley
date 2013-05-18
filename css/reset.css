@@ -1,0 +1,36 @@
+/*
+    Reset
+    reset css for html elements (yahoo reset modified)
+*/
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+iframe, img {
+    border: 0;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+form, input, textarea, select, fieldset {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}

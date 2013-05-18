@@ -1,0 +1,85 @@
+/*
+    Module banner
+    css styles specific to this module only
+*/
+
+.banner {
+
+}
+
+.banner h1 {
+    padding-top: 60px;
+    margin-top: -60px;
+}
+
+.banner.home h1 {
+    padding-top: 300px;
+    margin-top: -300px;
+}
+
+.banner .content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 20px 20px 20px;
+}
+
+.banner.home {
+    background-image: url('../images/alley.jpg');
+    background-position: 49% 49%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner.home .content {
+    padding: 300px 20px 50px 20px;
+    text-shadow: 1px 1px 7px #000000;
+    filter: dropshadow(color=#000000, offx=1, offy=1);
+}
+
+
+
+/*
+    Module nav
+    css styles specific to this module only
+*/
+
+.nav {
+    position: fixed;
+    width: 100%;
+}
+
+.nav .content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav a {
+    display: block;
+    padding: 10px 15px 15px 15px;
+}
+
+
+
+/*
+    Module section
+    css styles specific to this module only
+*/
+
+.section {
+    padding: 15px 20px 20px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section .panel {
+    padding: 20px 20px 10px 20px;
+}

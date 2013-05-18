@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title>Alley</title>
+        <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+        <!--<link href="css/reset.css" rel="stylesheet" />
+        <link href="css/layout.css" rel="stylesheet" />
+        <link href="css/themes.css" rel="stylesheet" />
+        <link href="css/site.css" rel="stylesheet" />-->
+        <link href="css/all.min.css" rel="stylesheet" />
+    </head>
+    <body class="default f320">
+        <div class="nav dark bg1">
+            <div class="content">
+                <ul>
+                    <li><a href="#home" class="c2">Home</a></li>
+                    <li><a href="#layout" class="c2">Layout</a></li>
+                    <li><a href="#themes" class="c2">Themes</a></li>
+                    <li><a href="#reset" class="c2">Reset</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner home dark">
+            <div class="content">
+                <h1 class="c1" id="home">Alley</h1>
+                <h2 class="c1">No bloat layouts</h2>
+            </div>
+        </div>
+        <div class="section">
+            <div class="row f440">
+                <div class="col w1of3">
+                    <img src="images/alley.jpg" alt="image" class="w1of1" />
+                    <h2>Tiny footprint</h2>
+                    <p>Only 1KB for the layout and reset css. Tested working on Firefox, Safari, Chrome, IE8+</p>
+                </div>
+                <div class="col w1of3">
+                    <img src="images/alley.jpg" alt="image" class="w1of1" />
+                    <h2>Completely responsive</h2>
+                    <p>Use table-cell layouts which adapt to your browser using percentages.</p>
+                </div>
+                <div class="col w1of3">
+                    <img src="images/alley.jpg" alt="image" class="w1of1" />
+                    <h2>Object-oriented themes</h2>
+                    <p>Create reusable themes, keeping your layout and styling separate.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Example html</h3>
+            <pre>
+&lt;div class="row">
+    &lt;div class="col w1of3">1of3&lt;/div>
+    &lt;div class="col w1of3">1of3&lt;/div>
+    &lt;div class="col w1of3">1of3&lt;/div>
+&lt;/div></pre>
+            <p><a href="css/alley.min.css" target="_blank">Download alley.min.css (1.15KB)</a></p>
+        </div>
+        <div class="banner light bg1">
+            <div class="content">
+                <h1 class="c1" id="layout">Layout</h1>
+                <h2>Responsive multi-column grid</h2>
+            </div>
+        </div>
+        <div class="section debug">
+            <div class="row">
+                <div class="col w1of1">
+                    <p>Suspendisse posuere odio dignissim elit mollis pharetra. Fusce ornare magna ac purus fermentum sit amet consequat odio mattis. Quisque vitae tellus tis neque.</p>
+                </div>
+            </div>
+            <div class="row f760">
+                <div class="col w1of2">
+                    <p>Suspendisse posuere odio dignissim elit mollis pharetra. Fusce ornare magna ac purus fermentum sit amet consequat odio mattis. Quisque vitae tellus tis neque.</p>
+                </div>
+                <div class="col w1of2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum urna metus, vulputate nec semper vel, imperdiet non lectus. Sed lorem tortor, commodo pretium egestaum tempor nib et sollicitu.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col w1of3">
+                    <p>Suspendisse posuere odio dignissim elit mollis pharetra. Fusce ornare magna ac purus fermentum sit amet consequat odio mattis. Quisque vitae tellus tis neque.</p>
+                </div>
+                <div class="col w1of3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum urna metus, vulputate nec semper vel, imperdiet non lectus. Sed lorem tortor, commodo pretium egestaum tempor nib et sollicitu.</p>
+                </div>
+                <div class="col w1of3">
+                    <p>Suspendisse posuere odio dignissim elit mollis pharetra. Fusce ornare magna ac purus fermentum sit amet consequat odio mattis. Quisque vitae tellus tis neque.</p>
+                </div>
+            </div>
+            <div class="row f440">
+                <div class="col w1of4">
+                    <p>Suspendisse posuere odio dignissim elit mollis pharetra. Fusce ornare magna ac purus fermentum sit amet consequat odio mattis. Quisque vitae tellus tis neque.</p>
+                </div>
+                <div class="col w1of4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum urna metus, vulputate nec semper vel, imperdiet non lectus. Sed lorem tortor, commodo pretium egestaum tempor nib et sollicitu.</p>
+                </div>
+                <div class="col w1of4">
+                    <p>Suspendisse posuere odio dignissim elit mollis pharetra. Fusce ornare magna ac purus fermentum sit amet consequat odio mattis. Quisque vitae tellus tis neque.</p>
+                </div>
+                <div class="col w1of4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum urna metus, vulputate nec semper vel, imperdiet non lectus. Sed lorem tortor, commodo pretium egestaum tempor nib et sollicitu.</p>
+                </div>
+            </div>
+            <div class="row f760">
+                <div class="col w1of5">
+                    <p>Suspendisse posuere odio dignissim elit mollis pharetra. Fusce ornare magna ac purus fermentum sit amet consequat odio mattis. Quisque vitae tellus tis neque.</p>
+                </div>
+                <div class="col w1of5">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum urna metus, vulputate nec semper vel, imperdiet non lectus. Sed lorem tortor, commodo pretium egestaum tempor nib et sollicitu.</p>
+                </div>
+                <div class="col w1of5">
+                    <p>Suspendisse posuere odio dignissim elit mollis pharetra. Fusce ornare magna ac purus fermentum sit amet consequat odio mattis. Quisque vitae tellus tis neque.</p>
+                </div>
+                <div class="col w1of5">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum urna metus, vulputate nec semper vel, imperdiet non lectus. Sed lorem tortor, commodo pretium egestaum tempor nib et sollicitu.</p>
+                </div>
+                <div class="col w1of5">
+                    <p>Suspendisse posuere odio dignissim elit mollis pharetra. Fusce ornare magna ac purus fermentum sit amet consequat odio mattis. Quisque vitae tellus tis neque.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col w2of3">
+                    <p>Suspendisse posuere odio dignissim elit mollis pharetra. Fusce ornare magna ac purus fermentum sit amet consequat odio mattis. Quisque vitae tellus tis neque.</p>
+                </div>
+                <div class="col w1of3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum urna metus, vulputate nec semper vel, imperdiet non lectus. Sed lorem tortor, commodo pretium egestaum tempor nib et sollicitu.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col w2of3">
+                    <div class="row f760">
+                        <div class="col w2of3">
+                            <p>This is an example of a nested multi-column layout which responds at a different size from the content around it</p>
+                        </div>
+                        <div class="col w1of3">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum urna metus, vulputate nec semper vel, imperdiet non lectus. Sed lorem tortor, commodo pretium egestaum tempor nib et sollicitu.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col w1of3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum urna metus, vulputate nec semper vel, imperdiet non lectus. Sed lorem tortor, commodo pretium egestaum tempor nib et sollicitu.</p>
+                </div>
+            </div>
+            <div class="row f760">
+                <div class="col w1of2">
+                    <p>Suspendisse posuere odio dignissim elit mollis pharetra. Fusce ornare magna ac purus fermentum sit amet consequat odio mattis. Quisque vitae tellus tis neque.</p>
+                </div>
+                <div class="col w1of4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum urna metus, vulputate nec semper vel, imperdiet non lectus. Sed lorem tortor, commodo pretium egestaum tempor nib et sollicitu.</p>
+                </div>
+                <div class="col w1of4">
+                    <p>Suspendisse posuere odio dignissim elit mollis pharetra. Fusce ornare magna ac purus fermentum sit amet consequat odio mattis. Quisque vitae tellus tis neque.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col w2of5">
+                    <p>Suspendisse posuere odio dignissim elit mollis pharetra. Fusce ornare magna ac purus fermentum sit amet consequat odio mattis. Quisque vitae tellus tis neque.</p>
+                </div>
+                <div class="col w1of5">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum urna metus, vulputate nec semper vel, imperdiet non lectus. Sed lorem tortor, commodo pretium egestaum tempor nib et sollicitu.</p>
+                </div>
+                <div class="col w1of5">
+                    <p>Suspendisse posuere odio dignissim elit mollis pharetra. Fusce ornare magna ac purus fermentum sit amet consequat odio mattis. Quisque vitae tellus tis neque.</p>
+                </div>
+                <div class="col w1of5">
+                    <p>Suspendisse posuere odio dignissim elit mollis pharetra. Fusce ornare magna ac purus fermentum sit amet consequat odio mattis. Quisque vitae tellus tis neque.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col w3of4">
+                    <p>Suspendisse posuere odio dignissim elit mollis pharetra. Fusce ornare magna ac purus fermentum sit amet consequat odio mattis. Quisque vitae tellus tis neque.</p>
+                </div>
+                <div class="col w1of4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum urna metus, vulputate nec semper vel, imperdiet non lectus. Sed lorem tortor, commodo pretium egestaum tempor nib et sollicitu.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col w3of5">
+                    <p>Suspendisse posuere odio dignissim elit mollis pharetra. Fusce ornare magna ac purus fermentum sit amet consequat odio mattis. Quisque vitae tellus tis neque.</p>
+                </div>
+                <div class="col w1of5">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum urna metus, vulputate nec semper vel, imperdiet non lectus. Sed lorem tortor, commodo pretium egestaum tempor nib et sollicitu.</p>
+                </div>
+                <div class="col w1of5">
+                    <p>Suspendisse posuere odio dignissim elit mollis pharetra. Fusce ornare magna ac purus fermentum sit amet consequat odio mattis. Quisque vitae tellus tis neque.</p>
+                </div>
+            </div>
+            <div class="row">
+                 <div class="col w4of5">
+                    <p>Suspendisse posuere odio dignissim elit mollis pharetra. Fusce ornare magna ac purus fermentum sit amet consequat odio mattis. Quisque vitae tellus tis neque.</p>
+                </div>
+                <div class="col w1of5">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum urna metus, vulputate nec semper vel, imperdiet non lectus. Sed lorem tortor, commodo pretium egestaum tempor nib et sollicitu.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Layout.css</h3>
+            <pre>
+.row {
+    display: table;
+    border-spacing: 20px 0;
+    margin: 0 -20px;
+}
+
+.col {
+    display: table-cell;
+    vertical-align: top;
+    border-spacing: 0 0;
+    margin: 0;
+}
+
+.w1of1 { width: 100%; }
+.w1of2 { width: 50%; }
+.w1of3 { width: 33.33333%; }
+.w2of3 { width: 66.66666%; }
+.w1of4 { width: 25%; }
+.w3of4 { width: 75%; }
+.w1of5 { width: 20%; }
+.w2of5 { width: 40%; }
+.w3of5 { width: 60%; }
+.w4of5 { width: 80%; }</pre>
+            <p><a href="css/layout.css" target="_blank">View (1.37KB)</a></p>
+        </div>
+        <div class="banner light bg1">
+            <div class="content">
+                <h1 class="c1" id="themes">Themes</h1>
+                <h2>Object-oriented themes</h2>
+            </div>
+        </div>
+        <div class="section">
+            <div class="row f760">
+                <div class="col w1of3 light">
+                    <div class="panel bg1 br1">
+                        <img src="images/alley.jpg" alt="image" class="w1of1" />
+                        <h2 class="c1">Light theme</h2>
+                        <p>This is an example of the same html with a different themes applied to each</p>
+                        <p><a href="#" target="_blank" class="c1">Read more</a></p>
+                    </div>
+                </div>
+                <div class="col w1of3">
+                    <div class="panel bg1 br1">
+                        <img src="images/alley.jpg" alt="image" class="w1of1" />
+                        <h2 class="c1">Default theme</h2>
+                        <p>This theme is applied to the entire site by default</p>
+                        <p><a href="#" target="_blank" class="c1">Read more</a></p>
+                    </div>
+                </div>
+                <div class="col w1of3 dark">
+                    <div class="panel bg1 br1">
+                        <img src="images/alley.jpg" alt="image" class="w1of1" />
+                        <h2 class="c1">Dark theme</h2>
+                        <p>This is an example of the same html with a different themes applied to each</p>
+                        <p><a href="#" target="_blank" class="c1">Read more</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Themes.css</h3>
+            <pre>
+.dark {
+    color: #bbbbbb;
+}
+
+.dark .c1 {
+    color: #ffffff;
+}
+
+.dark .c2 {
+    color: #bbbbbb;
+}
+
+.dark a.c2:hover {
+    color: #ffffff;
+}
+
+.dark .bg1 {
+    background-color: #333333;
+}
+
+.dark .bg2 {
+    background-color: #111111;
+}</pre>
+            <p><a href="css/themes.css" target="_blank" class="c1">View (3.6KB)</a></p>
+        </div>
+        <div class="banner light bg1">
+            <div class="content">
+                <h1 class="c1" id="reset">Reset</h1>
+                <h2>Cross browser styles based on yahoo reset</h2>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Headings &amp; Paragraphs</h3>
+            <div class="row f760">
+                <div class="col w1of3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <sub>sub text</sub> ut labore et <sup>sup text</sup> magna aliqua.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+                <div class="col w1of3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor magna aliqua.</p>
+                    <blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </blockquote>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor magna aliqua.</p>
+                </div>
+                <div class="col w1of3">
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <h5>Heading 5</h5>
+                    <h6>Heading 6</h6>
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+            <h3>Lists</h3>
+            <div class="row">
+                <div class="col w1of3">
+                    <ul>
+                        <li>Unordered list test</li>
+                        <li>Another list element. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Yet another element in the list</li>
+                        <li>Some long text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                    </ul>
+                    <ol>
+                        <li>Ordered list test</li>
+                        <li>Another list element</li>
+                        <li>Yet another element in the list</li>
+                    </ol>
+                </div>
+                <div class="col w1of3">
+                    <ol>
+                        <li>Ordered list</li>
+                        <li>Here's a nested unordered list
+                            <ul>
+                                <li>Nested Unordered list</li>
+                                <li>Nested ordered list
+                                    <ol>
+                                        <li>The first</li>
+                                        <li>And the second</li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Ordered List item</li>
+                        <li>Nested Ordered list
+                            <ol>
+                                <li>Some point</li>
+                                <li>Nested Unordered list
+                                    <ul>
+                                        <li>The first</li>
+                                        <li>And the second</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col w1of3">
+                    <dl>
+                        <dt>definition list dt</dt>
+                        <dd>definition list dd</dd>
+                        <dt>definition list dt</dt>
+                        <dd>definition list dd</dd>
+                        <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</dt>
+                        <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</dd>
+                        <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</dt>
+                        <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</dd>
+                    </dl>
+                </div>
+            </div>
+            <h3>Other</h3>
+            <div class="row">
+                <div class="col w1of3">
+                    <p>
+                        <strong>&lt;strong&gt;</strong><br>
+                        <del>&lt;del&gt; deleted</del><br>
+                        <dfn>&lt;dfn&gt; dfn</dfn><br>
+                        <em>&lt;em&gt; emphasis</em>
+                    </p>
+                    <p>
+                        <a>&lt;a&gt; anchor</a><br>
+                        <a href="http://www.google.com">&lt;a&gt; a + href</a>
+                    </p>
+                    <p>
+                        <abbr title="extended abbr text should show when mouse over">&lt;abbr&gt; abbr - extended text when mouseover.</abbr>
+                    </p>
+                    <address>
+                        &lt;address&gt;<br>
+                        Donald Duck<br>
+                        Box 555<br>
+                        Disneyland
+                    </address>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore.</p>
+                </div>
+                <div class="col w1of3">
+                    <table>
+                        <caption><em>A standard test table with a caption, tr, td elements</em></caption>
+                        <tr>
+                            <th class="span-4">Table Header One</th>
+                            <th class="span-4 last">Table Header Two</th>
+                        </tr>
+                        <tr>
+                            <td>TD One</td>
+                            <td>TD Two</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">TD colspan 2</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <caption><em>A test table with a thead, tfoot, and tbody elements</em></caption>
+                        <thead>
+                            <tr>
+                                <th class="span-4">Table Header One</th>
+                                <th class="span-4 last">Table Header Two</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">tfoot footer</td>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr>
+                                <td>TD One</td>
+                                <td>TD Two</td>
+                            </tr>
+                            <tr>
+                                <td>TD One</td>
+                                <td>TD Two</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>TD One</td>
+                                <td>TD Two</td>
+                            </tr>
+                            <tr>
+                                <td>TD One</td>
+                                <td>TD Two</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col w1of3">
+                    <pre>
+pre  space1
+pre  space1
+pre    space2
+pre    space2
+pre tab
+pre tab</pre>
+                    <code>&lt;code&gt;
+                        Not indented
+                        indent1
+                        indent1
+                        indent2
+                        indent3</code>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Reset.css</h3>
+            <pre>
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+iframe, img {
+    border: 0;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+form, input, textarea, select, fieldset {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}</pre>
+            <p><a href="css/reset.css" target="_blank">View (0.4KB)</a></p>
+        </div>
+        <script src="js/Main.js"></script>
+    </body>
+</html>

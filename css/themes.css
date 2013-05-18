@@ -1,0 +1,155 @@
+/*
+    Themes default
+    css for colours, fonts and font sizes, reset html default font down 16px to 12px
+    12px/16px = 0.875
+*/
+
+.default {
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 0.875em;
+    color: #444444;
+    background-color: #ffffff;
+}
+
+.default h1 { font-size: 3em; }
+.default h2 { font-size: 2em; }
+.default h3 { font-size: 1.5em; }
+.default h4 { font-size: 1.286em; }
+.default h5 { font-size: 1.143em; }
+.default h6 { font-size: 1em; }
+
+.default p {
+    line-height: 1.429em;
+    padding: 0 0 0.715em 0;
+}
+
+.default h1,
+.default h2,
+.default h3,
+.default h4,
+.default h5,
+.default h6,
+.default p {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+    -webkit-word-break: break-word;
+    -moz-word-break: break-word;
+    -ms-word-break: break-word;
+    -o-word-break: break-word;
+    word-break: break-word;
+}
+
+.default pre {
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    padding: 10px;
+    background-color: #eeeeee;
+    border: 1px solid #dedee3;
+    overflow: hidden;
+}
+
+.default .col img {
+    display: block;
+    padding: 0 0 0.2em 0;
+}
+
+/*
+    Theme dark
+    css for colours, fonts and font sizes
+*/
+
+.dark {
+    color: #bbbbbb;
+}
+
+.dark .c1 {
+    color: #ffffff;
+}
+
+.dark .c2 {
+    color: #bbbbbb;
+}
+
+.dark a.c2:hover {
+    color: #ffffff;
+}
+
+.dark.bg1,
+.dark .bg1 {
+    background: #333333;
+    background: -moz-linear-gradient(top,  #333333 0%, #000000 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#333333), color-stop(100%,#000000));
+    background: -webkit-linear-gradient(top,  #333333 0%,#000000 100%);
+    background: -o-linear-gradient(top,  #333333 0%,#000000 100%);
+    background: -ms-linear-gradient(top,  #333333 0%,#000000 100%);
+    background: linear-gradient(to bottom,  #333333 0%,#000000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#000000',GradientType=0 );
+}
+
+.dark.bg2,
+.dark .bg2 {
+    background-color: #111111;
+}
+
+/*
+    Theme light
+    css for colours, fonts and font sizes
+*/
+
+.light {
+    color: #666666;
+}
+
+.light .c1 {
+    color: #2989D8;
+}
+
+.light a.c1:hover {
+    color: #71A8D6;
+}
+
+.light .c2 {
+    color: #666666;
+}
+
+.light .c3 {
+    color: #ffffff;
+}
+
+.light.bg1,
+.light .bg1 {
+    background: #f7f5f2;
+    background: -moz-linear-gradient(top,  #f7f5f2 0%, #ededed 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f5f2), color-stop(100%,#ededed));
+    background: -webkit-linear-gradient(top,  #f7f5f2 0%,#ededed 100%);
+    background: -o-linear-gradient(top,  #f7f5f2 0%,#ededed 100%);
+    background: -ms-linear-gradient(top,  #f7f5f2 0%,#ededed 100%);
+    background: linear-gradient(to bottom,  #f7f5f2 0%,#ededed 100%);
+}
+
+.light.br1,
+.light .br1 {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f5f2', endColorstr='#ededed',GradientType=0 );
+    -webkit-box-shadow:  0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow:  0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+/*
+    Theme debug
+    css for colours, fonts and font sizes
+*/
+
+.debug {
+    background-image: url('../images/grid.png');
+}
+
+.debug .row {
+    margin-bottom: 20px;
+}
+
+.debug .col {
+    background-color: rgba(200, 200, 200, 0.3);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33000000', endColorstr='#33000000', GradientType=0);
+}
