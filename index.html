@@ -6,12 +6,13 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <title>Alley</title>
         <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
-        <!--<link href="css/reset.css" rel="stylesheet" />
-        <link href="css/layout.css" rel="stylesheet" />
-        <link href="css/themes.css" rel="stylesheet" />
-        <link href="css/site.css" rel="stylesheet" />-->
-        <link href="css/all.min.css" rel="stylesheet" />
-        <!--<script src="js/almond.min.js"></script>-->
+        <link href="css/base/reset.css" rel="stylesheet" />
+        <link href="css/base/layout.css" rel="stylesheet" />
+        <link href="css/base/themes.css" rel="stylesheet" />
+        <link href="css/views/banner.css" rel="stylesheet" />
+        <link href="css/views/nav.css" rel="stylesheet" />
+        <link href="css/views/section.css" rel="stylesheet" />
+        <script src="js/base/almond.js"></script>
     </head>
     <body class="default f320">
         <div class="nav dark bg1">
@@ -20,11 +21,12 @@
                     <li><a href="#home" class="c2">Home</a></li>
                     <li><a href="#layout" class="c2">Layout</a></li>
                     <li><a href="#themes" class="c2">Themes</a></li>
+                    <li><a href="#modules" class="c2">Modules</a></li>
                     <li><a href="#reset" class="c2">Reset</a></li>
                 </ul>
             </div>
         </div>
-        <div class="banner home dark" id="carousel1">
+        <div class="banner home dark">
             <div class="content">
                 <h1 class="c1" id="home">Alley</h1>
                 <h2 class="c1">No bloat layouts</h2>
@@ -221,7 +223,7 @@
 .w2of5 { width: 40%; }
 .w3of5 { width: 60%; }
 .w4of5 { width: 80%; }</pre>
-            <p><a href="css/layout.css" target="_blank">View (1.37KB)</a></p>
+            <p><a href="css/base/layout.css" target="_blank">View (1.37KB)</a></p>
         </div>
         <div class="banner light bg1">
             <div class="content">
@@ -283,7 +285,51 @@
 .dark .bg2 {
     background-color: #111111;
 }</pre>
-            <p><a href="css/themes.css" target="_blank" class="c1">View (3.6KB)</a></p>
+            <p><a href="css/base/themes.css" target="_blank" class="c1">View (3.6KB)</a></p>
+        </div>
+        <div class="banner light bg1">
+            <div class="content">
+                <h1 class="c1" id="modules">Modules</h1>
+                <h2>Modular javascript with dependancies and inheritance</h2>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Child.js</h3>
+            <pre>
+define('Child', function () {
+    return Class.extend({
+        init: function (id, options) {
+            this.el = document.getElementById(id);
+            this.options = options;
+        },
+        get: function () {
+            return this.options;
+        },
+        childMethod: function () {
+            return true;
+        }
+    });
+});</pre>
+            <p><a href="js/includes/Child.js" target="_blank">View (0.4KB)</a></p>
+            <h3>Parent.js</h3>
+            <pre>
+define('Parent', ['Child'], function (Child) {
+    return Child.extend({
+        init: function (id, options) {
+            this.el = document.getElementById(id);
+            this.options = options;
+            this._super(id, options);
+        },
+        get: function () {
+            // Call the inherited version of get()
+            return this._super();
+        },
+        parentMethod: function () {
+            return true;
+        }
+    });
+});</pre>
+            <p><a href="js/includes/Parent.js" target="_blank">View (0.5KB)</a></p>
         </div>
         <div class="banner light bg1">
             <div class="content">
@@ -497,15 +543,18 @@ form, input, textarea, select, fieldset {
     font-size: inherit;
     font-weight: inherit;
 }</pre>
-            <p><a href="css/reset.css" target="_blank">View (0.4KB)</a></p>
+            <p><a href="css/base/reset.css" target="_blank">View (0.4KB)</a></p>
         </div>
-        <!--<script src="js/Utils.js"></script>
-        <script src="js/Child.js"></script>
-        <script src="js/Carousel.js"></script>-->
-        <script src="js/all.min.js"></script>
+        <script src="js/includes/Class.js"></script>
+        <script src="js/includes/Child.js"></script>
+        <script src="js/includes/Parent.js"></script>
         <script>
-            require(['Carousel'], function(Carousel) {
-                var carousel1 = new Carousel('carousel1', { option: 'example', hello: 1 });
+            require(['Child', 'Parent'], function(Child, Parent) {
+                var p = new Child('home', { example: 'child option'});
+                console.log('Child', p);
+                
+                var n = new Parent('reset', { example4: 'parent option'});
+                console.log('Parent', n);
             });
         </script>
     </body>

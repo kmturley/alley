@@ -142,7 +142,7 @@
 */
 
 .debug {
-    background-image: url('../images/grid.png');
+    background-image: url('../../images/grid.png');
 }
 
 .debug .row {
