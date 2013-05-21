@@ -3,12 +3,6 @@
     css for the grid layout
 */
 
-div {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 .row {
     display: table;
     border-spacing: 20px 0;
@@ -18,59 +12,69 @@ div {
 .col {
     display: table-cell;
     vertical-align: top;
+    width: 1%;
 }
 
-/* width percent */
+.w1of1 {
+    width: 100%;
+}
 
-.w1of1 { width: 100%; }
-.w1of2 { width: 50%; }
-.w1of3 { width: 33.33333%; }
-.w2of3 { width: 66.66666%; }
-.w1of4 { width: 25%; }
-.w3of4 { width: 75%; }
-.w1of5 { width: 20%; }
-.w2of5 { width: 40%; }
-.w3of5 { width: 60%; }
-.w4of5 { width: 80%; }
+/* 20em (320px) */
 
-/* height percent */
-
-.h1of1 { height: 100%; }
-.h1of2 { height: 50%; }
-.h1of3 { height: 33.33333%; }
-.h2of3 { height: 66.66666%; }
-.h1of4 { height: 25%; }
-.h3of4 { height: 75%; }
-.h1of5 { height: 20%; }
-.h2of5 { height: 40%; }
-.h3of5 { height: 60%; }
-.h4of5 { height: 80%; }
-
-/* break point to switch to mobile grid supporting IE9+ */
-
-@media (max-width: 760px) {
-    .f760.col,
-    .f760 .col {
-        width: auto;
-        height: auto;
+@media (max-width: 20em) {
+    .flow-xs.row,
+    .flow-xs .row,
+    .flow-xs .col {
         display: block;
+        width: auto;
+        margin: 0;
     }
 }
 
-@media (max-width: 440px) {
-    .f440.col,
-    .f440 .col {
-        width: auto;
-        height: auto;
+/* 30em (480px) */
+
+@media (max-width: 30em) {
+    .small.row,
+    .flow-s .row,
+    .flow-s .col {
         display: block;
+        width: auto;
+        margin: 0;
     }
 }
 
-@media (max-width: 320px) {
-    .f320.col,
-    .f320 .col {
-        width: auto;
-        height: auto;
+/* 48em (768px) */
+
+@media (max-width: 48em) {
+    .flow-m.row,
+    .flow-m.row,
+    .flow-m .col {
         display: block;
+        width: auto;
+        margin: 0;
+    }
+}
+
+/* 68.75em (1100px) */
+
+@media (max-width: 68.75) {
+    .flow-l.row,
+    .flow-l.row,
+    .flow-l .col {
+        display: block;
+        width: auto;
+        margin: 0;
+    }
+}
+
+/* 81.25em (1300px) */
+
+@media (max-width: 81.25em) {
+    .flow-xl.row,
+    .flow-xl.row,
+    .flow-xl .col {
+        display: block;
+        width: auto;
+        margin: 0;
     }
 }
