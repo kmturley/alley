@@ -17,7 +17,7 @@ The third component is the object oriented theme files. They are namespaced usin
 
 Main advantages of simple responsive:
 
- * <1KB in size! (twitter bootstrap is 10KB)
+ * 1KB in size! (twitter bootstrap is 10KB)
  * Uses table cells which flow content automatically for each device size
  * Fully tested working on browsers Chrome, Firefox, Safari, IE8+
  * Object oriented css ensures your themes will be reusable
@@ -33,8 +33,16 @@ Layout html example:
         <div class="col">Column three</div>
     </div>
 
+Respond columns at common breakpoints
+
+ * .flow-xs = 20em = 320px
+ * .flow-s = 30em = 480px
+ * .flow-m = 48em = 768px
+ * .flow-l = 64em = 1024px
+ * .flow-xl = 80em = 1280px
+
 Layout css example:
-    
+
     .row {
         display: table;
         border-spacing: 20px 0;
@@ -46,7 +54,6 @@ Layout css example:
         vertical-align: top;
         width: 1%;
     }
-    
 
 Themes css example:
 
@@ -75,7 +82,7 @@ Themes css example:
     .dark .bg2 {
         background-color: #111111;
     }
-    
+
 Reset css:
 
     body {
