@@ -17,23 +17,24 @@ The third component is the object oriented theme files. They are namespaced usin
 
 Main advantages of simple responsive:
 
- * 1KB in size! (twitter bootstrap is 10KB)
+ * <1KB in size! (twitter bootstrap is 10KB)
  * Uses table cells which flow content automatically for each device size
  * Fully tested working on browsers Chrome, Firefox, Safari, IE8+
  * Object oriented css ensures your themes will be reusable
  * Namespaced modules mean your css rules only affect the area you are working
  * Grid system adds gutters between columns which means an end to using first and last classes!
+ * Modular javascript using amc modules and inheritance
 
 Layout html example:
 
-    <div class="row">
-        <div class="col w1of3">1of3</div>
-        <div class="col w1of3">1of3</div>
-        <div class="col w1of3">1of3</div>
+    <div class="row flow-s">
+        <div class="col">Column one</div>
+        <div class="col">Column two</div>
+        <div class="col">Column three</div>
     </div>
 
 Layout css example:
-
+    
     .row {
         display: table;
         border-spacing: 20px 0;
@@ -43,6 +44,7 @@ Layout css example:
     .col {
         display: table-cell;
         vertical-align: top;
+        width: 1%;
     }
     
 
