@@ -54,7 +54,7 @@
 
 @media (max-width: 48em) {
     .flow-m.row,
-    .flow-m.row,
+    .flow-m .row,
     .flow-m .col {
         display: block;
         width: auto;
@@ -66,7 +66,7 @@
 
 @media (max-width: 64em) {
     .flow-l.row,
-    .flow-l.row,
+    .flow-l .row,
     .flow-l .col {
         display: block;
         width: auto;
@@ -78,7 +78,7 @@
 
 @media (max-width: 80em) {
     .flow-xl.row,
-    .flow-xl.row,
+    .flow-xl .row,
     .flow-xl .col {
         display: block;
         width: auto;
