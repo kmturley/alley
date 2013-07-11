@@ -1,6 +1,6 @@
 # Alley
 
-Responsive, cross-browser, table-cell grid layout. Only 1KB for the layout and reset css. Tested working on Firefox, Safari, Chrome, IE8+. Use table-cell layouts which adapt to your browser using percentages. Create oocss reusable themes, keeping your layout and styling separate.
+Responsive, cross-browser, grid layout. Only 1KB for the layout and reset css. Tested working on Firefox, Safari, Chrome, IE8+. Using percentages which adapt and reflow with your browser/screen size. Create oocss reusable themes, keeping your layout and styling separate.
 
  > *The purpose of OOCSS is to encourage code reuse and, ultimately, faster and more efficient stylesheets that are easier to add to and maintain*
  [*[source]*](http://coding.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/)
@@ -11,14 +11,14 @@ By separating the structure/layout/grid/ from the visual/styles/colours, blocks 
 
 The first component of simple responsive is the reset css file. This allows you to remove cross browser differences and ensure your site looks the same. You can update or replace the reset file which is currently a modified version of the yahoo YUI reset.
 
-The second component is the responsive grid layout. There are many ways to create layout using css but by far the most flexible cross browser solution is using display: table-cell. The grid included works out sizes based on percentages and will flow with your browser/device size. Included are some example breakpoints for affecting the layout for different resolutions. It also means th end to first and last css classes!
+The second component is the responsive grid layout. There are many ways to create layout using css but by far the most flexible cross browser solution is using percentages. The grid included works out sizes based on ratios and will flow with your browser/device size. Included are some example breakpoints for affecting the layout for different resolutions. It also means an end to using first and last css classes!
 
 The third component is the object oriented theme files. They are namespaced using the theme name such as light or dark. However each theme contains the same child classes which makes them interchangeable and reusable.
 
 Main advantages of simple responsive:
 
  * 1KB in size! (twitter bootstrap is 10KB)
- * Uses table cells which flow content automatically for each device size
+ * Using percentages which adapt and reflow with your browser/screen size.
  * Fully tested working on browsers Chrome, Firefox, Safari, IE8+
  * Object oriented css ensures your themes will be reusable
  * Namespaced modules mean your css rules only affect the area you are working
@@ -28,9 +28,9 @@ Main advantages of simple responsive:
 Layout html example:
 
     <div class="row flow-s">
-        <div class="col">Column one</div>
-        <div class="col">Column two</div>
-        <div class="col">Column three</div>
+        <div class="col w1of3">Column one</div>
+        <div class="col w1of3">Column two</div>
+        <div class="col w1of3">Column three</div>
     </div>
 
 Respond columns at common breakpoints
@@ -43,17 +43,18 @@ Respond columns at common breakpoints
 
 Layout css example:
 
-    .row {
-        display: table;
-        border-spacing: 20px 0;
-        margin: 0 -20px;
-    }
-    
-    .col {
-        display: table-cell;
-        vertical-align: top;
-        width: 1%;
-    }
+	.row {
+		margin-right: -20px;
+		overflow: auto;
+	}
+	
+	.col {
+		float: left;
+		padding-right: 20px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
 
 Themes css example:
 

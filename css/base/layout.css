@@ -4,16 +4,19 @@
 */
 
 .row {
-    display: table;
-    border-spacing: 20px 0;
-    margin: 0 -20px;
+    margin-right: -20px;
+    overflow: auto;
 }
 
 .col {
-    display: table-cell;
-    vertical-align: top;
-    width: 1%;
+    float: left;
+	padding-right: 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
+
+/* width helpers */
 
 .w1of1 { width: 100%; }
 .w1of2 { width: 50%; }
@@ -29,59 +32,44 @@
 /* 20em = 320px */
 
 @media (max-width: 20em) {
-    .flow-xs.row,
-    .flow-xs .row,
+    .flow-xs.col,
     .flow-xs .col {
-        display: block;
-        width: auto;
-        margin: 0;
+        width: 100%;
     }
 }
 
 /* 30em = 480px */
 
 @media (max-width: 30em) {
-    .flow-s.row,
-    .flow-s .row,
+    .flow-s.col,
     .flow-s .col {
-        display: block;
-        width: auto;
-        margin: 0;
+        width: 100%;
     }
 }
 
 /* 48em = 768px */
 
 @media (max-width: 48em) {
-    .flow-m.row,
-    .flow-m .row,
+    .flow-m.col,
     .flow-m .col {
-        display: block;
-        width: auto;
-        margin: 0;
+        width: 100%;
     }
 }
 
 /* 64em = 1024px */
 
 @media (max-width: 64em) {
-    .flow-l.row,
-    .flow-l .row,
+    .flow-l.col,
     .flow-l .col {
-        display: block;
-        width: auto;
-        margin: 0;
+        width: 100%;
     }
 }
 
 /* 80em = 1280px */
 
 @media (max-width: 80em) {
-    .flow-xl.row,
-    .flow-xl .row,
+    .flow-xl.col,
     .flow-xl .col {
-        display: block;
-        width: auto;
-        margin: 0;
+        width: 100%;
     }
 }

@@ -23,25 +23,6 @@
     padding: 0 0 0.715em 0;
 }
 
-.default h1,
-.default h2,
-.default h3,
-.default h4,
-.default h5,
-.default h6,
-.default p {
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    -o-hyphens: auto;
-    hyphens: auto;
-    -webkit-word-break: break-word;
-    -moz-word-break: break-word;
-    -ms-word-break: break-word;
-    -o-word-break: break-word;
-    word-break: break-word;
-}
-
 .default pre {
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     padding: 10px;
@@ -53,6 +34,23 @@
 .default .col img {
     display: block;
     padding: 0 0 0.2em 0;
+}
+
+.text {
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+}
+
+.break {
+    -webkit-word-break: break-all;
+    -moz-word-break: break-all;
+    -ms-word-break: break-all;
+    -o-word-break: break-all;
+    word-break: break-all;
 }
 
 /*
@@ -152,4 +150,5 @@
 .debug .col {
     background-color: rgba(200, 200, 200, 0.3);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33000000', endColorstr='#33000000', GradientType=0);
+	background-clip: content-box;
 }

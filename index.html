@@ -34,17 +34,17 @@
         </div>
         <div class="section">
             <div class="row flow-s">
-                <div class="col">
+                <div class="col w1of3">
                     <img src="images/alley.jpg" alt="image" class="w1of1" />
                     <h2>Tiny footprint</h2>
                     <p>1KB for the layout and reset css. Tested working on Firefox, Safari, Chrome, IE8+</p>
                 </div>
-                <div class="col">
+                <div class="col w1of3">
                     <img src="images/alley.jpg" alt="image" class="w1of1" />
                     <h2>Completely responsive</h2>
-                    <p>Use table-cell layouts which adapt to your browser using percentages.</p>
+                    <p>Using percentages which adapt and reflow with your browser/screen size.</p>
                 </div>
-                <div class="col">
+                <div class="col w1of3">
                     <img src="images/alley.jpg" alt="image" class="w1of1" />
                     <h2>Object-oriented themes</h2>
                     <p>Create reusable themes, keeping your layout and styling separate.</p>
@@ -55,9 +55,9 @@
             <h3>Example 3 col html (breaks at small width)</h3>
             <pre>
 &lt;div class="row flow-s">
-    &lt;div class="col">Column one&lt;/div>
-    &lt;div class="col">Column two&lt;/div>
-    &lt;div class="col">Column three&lt;/div>
+    &lt;div class="col w1of3">Column one&lt;/div>
+    &lt;div class="col w1of3">Column two&lt;/div>
+    &lt;div class="col w1of3">Column three&lt;/div>
 &lt;/div></pre>
             <p><a href="css/alley.min.css" target="_blank">Download alley.min.css (0.9KB)</a></p>
         </div>
@@ -67,55 +67,55 @@
                 <h2>Responsive multi-column grid</h2>
             </div>
         </div>
-        <div class="section debug">
+        <div class="section debug flow-s">
             <div class="row">
-                <div class="col">col</div>
+                <div class="col w1of1">col</div>
             </div>
             <div class="row flow-m">
-                <div class="col">col</div>
-                <div class="col">col</div>
+                <div class="col w1of2">col</div>
+                <div class="col w1of2">col</div>
             </div>
             <div class="row">
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-            </div>
-            <div class="row flow-s">
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
+                <div class="col w1of3">col</div>
+                <div class="col w1of3">col</div>
+                <div class="col w1of3">col</div>
             </div>
             <div class="row flow-m">
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
+                <div class="col w1of4">col</div>
+                <div class="col w1of4">col</div>
+                <div class="col w1of4">col</div>
+                <div class="col w1of4">col</div>
+            </div>
+            <div class="row flow-l">
+                <div class="col w1of5">col</div>
+                <div class="col w1of5">col</div>
+                <div class="col w1of5">col</div>
+                <div class="col w1of5">col</div>
+                <div class="col w1of5">col</div>
             </div>
             <div class="row">
                 <div class="col w2of3">col w2of3</div>
-                <div class="col w1of3">col w1of3<br/>If you use different column widths, one needs some content to ensure the width is respected</div>
+                <div class="col w1of3">col w1of3</div>
             </div>
             <div class="row">
                 <div class="col w2of3">
                     <div class="row flow-m">
-                        <div class="col w2of3">col w2of3<br/>You can nest columns inside each other and have them flow at different breakpoints</div>
-                        <div class="col w1of3">col w1of3<br/>If you use different column widths, one needs some content to ensure the width is respected</div>
+                        <div class="col w1of2">You can nest columns inside each other and have them flow at different breakpoints!</div>
+                        <div class="col w1of2">col w1of3</div>
                     </div>
                 </div>
-                <div class="col w1of3">col w1of3<br/>If you use different column widths, one needs some content to ensure the width is respected</div>
+                <div class="col w1of3">col width: 200px<br/>Example using fixed width col</div>
             </div>
             <div class="row flow-m">
                 <div class="col w1of2">col w1of2</div>
                 <div class="col w1of4">col w1of4</div>
-                <div class="col w1of4">col w1of4<br/>If you use different column widths, one needs some content to ensure the width is respected</div>
+                <div class="col w1of4">col w1of4</div>
             </div>
             <div class="row">
                 <div class="col w2of5">col w2of5</div>
                 <div class="col w1of5">col w1of5</div>
                 <div class="col w1of5">col w1of5</div>
-                <div class="col w1of5">col w1of5<br/>If you use different column widths, one column needs content to ensure the width is respected</div>
+                <div class="col w1of5">col w1of5</div>
             </div>
             <div class="row">
                 <div class="col w3of4"></div>
@@ -135,17 +135,18 @@
             <h3>Layout.css</h3>
             <pre>
 .row {
-    display: table;
-    border-spacing: 20px 0;
-    margin: 0 -20px;
+    margin-right: -20px;
+    overflow: auto;
 }
 
 .col {
-    display: table-cell;
-    vertical-align: top;
-    width: 1%;
+    float: left;
+	padding-right: 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }</pre>
-            <p><a href="css/base/layout.css" target="_blank">View (1.37KB)</a></p>
+            <p><a href="css/base/layout.css" target="_blank">View (1KB)</a></p>
         </div>
         <div class="banner light bg1">
             <div class="content">
@@ -155,7 +156,7 @@
         </div>
         <div class="section">
             <div class="row flow-m">
-                <div class="col light">
+                <div class="col w1of3 light">
                     <div class="panel bg1 br1">
                         <img src="images/alley.jpg" alt="image" class="w1of1" />
                         <h2 class="c1">Light theme</h2>
@@ -163,7 +164,7 @@
                         <p><a href="#themes" class="c1">Read more</a></p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col w1of3">
                     <div class="panel bg1 br1">
                         <img src="images/alley.jpg" alt="image" class="w1of1" />
                         <h2 class="c1">Default theme</h2>
@@ -171,7 +172,7 @@
                         <p><a href="#themes" class="c1">Read more</a></p>
                     </div>
                 </div>
-                <div class="col dark">
+                <div class="col w1of3 dark">
                     <div class="panel bg1 br1">
                         <img src="images/alley.jpg" alt="image" class="w1of1" />
                         <h2 class="c1">Dark theme</h2>
@@ -468,16 +469,25 @@ form, input, textarea, select, fieldset {
             <p><a href="css/base/reset.css" target="_blank">View (0.4KB)</a></p>
         </div>
         <script src="js/includes/Class.js"></script>
+		<script src="js/includes/Events.js"></script>
         <script src="js/includes/Child.js"></script>
         <script src="js/includes/Parent.js"></script>
-        <script>
-            require(['Child', 'Parent'], function(Child, Parent) {
-                var p = new Child('home', { example: 'child option'});
-                console.log('Child', p);
-                
-                var n = new Parent('reset', { example4: 'parent option'});
-                console.log('Parent', n);
-            });
-        </script>
+		<script>
+			require(['Child', 'Parent'], function(Child, Parent) {
+				var c = new Child('layout', { item: { name: 'child option'} }),
+					p = new Parent('themes', { item: { name: 'parent option'} });
+				
+				// example event
+				c.addEvent('click', function(e) {
+					console.log('event triggered!', e);
+				});
+				
+				c.render();
+				p.render();
+				
+				console.log('Child', c);
+				console.log('Parent', p);
+			});
+		</script>
     </body>
 </html>
