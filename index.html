@@ -11,12 +11,14 @@
         <link href="css/base/themes.css" rel="stylesheet" />
         <link href="css/views/banner.css" rel="stylesheet" />
         <link href="css/views/nav.css" rel="stylesheet" />
-        <link href="css/views/section.css" rel="stylesheet" />
+        <link href="css/views/panel.css" rel="stylesheet" />
         <script src="js/base/almond.js"></script>
     </head>
     <body class="default flow-xs">
-        <div class="nav dark bg1">
-            <div class="content">
+        
+        
+        <div class="row full dark nav bg1">
+            <div class="col w1of1">
                 <ul>
                     <li><a href="#home" class="c2">Home</a></li>
                     <li><a href="#layout" class="c2">Layout</a></li>
@@ -26,165 +28,191 @@
                 </ul>
             </div>
         </div>
-        <div class="banner home dark">
-            <div class="content">
+        
+        
+        <div class="row full dark banner home">
+            <div class="col w1of1">
                 <h1 class="c1" id="home">Alley</h1>
                 <h2 class="c1">No bloat layouts</h2>
             </div>
         </div>
-        <div class="section">
-            <div class="row flow-s">
-                <div class="col w1of3">
-                    <img src="images/alley.jpg" alt="image" class="w1of1" />
-                    <h2>Tiny footprint</h2>
-                    <p>1KB for the layout and reset css. Tested working on Firefox, Safari, Chrome, IE8+</p>
-                </div>
-                <div class="col w1of3">
-                    <img src="images/alley.jpg" alt="image" class="w1of1" />
-                    <h2>Completely responsive</h2>
-                    <p>Using percentages which adapt and reflow with your browser/screen size.</p>
-                </div>
-                <div class="col w1of3">
-                    <img src="images/alley.jpg" alt="image" class="w1of1" />
-                    <h2>Object-oriented themes</h2>
-                    <p>Create reusable themes, keeping your layout and styling separate.</p>
-                </div>
+        
+        
+        <div class="row flow-s">
+            <div class="col w1of3">
+                <img src="images/alley.jpg" alt="image" class="w1of1" />
+                <h2>Tiny footprint</h2>
+                <p>1KB for the layout and reset css. Tested working on Firefox, Safari, Chrome, IE8+</p>
+            </div>
+            <div class="col w1of3">
+                <img src="images/alley.jpg" alt="image" class="w1of1" />
+                <h2>Completely responsive</h2>
+                <p>Using percentages which adapt and reflow with your browser/screen size.</p>
+            </div>
+            <div class="col w1of3">
+                <img src="images/alley.jpg" alt="image" class="w1of1" />
+                <h2>Object-oriented themes</h2>
+                <p>Create reusable themes, keeping your layout and styling separate.</p>
             </div>
         </div>
-        <div class="section">
-            <h3>Example 3 col html (breaks at small width)</h3>
-            <pre>
+        
+        
+        <div class="row">
+            <div class="col w1of1">
+                <h3>Example 3 col html (breaks at small width)</h3>
+                <pre>
 &lt;div class="row flow-s">
     &lt;div class="col w1of3">Column one&lt;/div>
     &lt;div class="col w1of3">Column two&lt;/div>
     &lt;div class="col w1of3">Column three&lt;/div>
 &lt;/div></pre>
-            <p><a href="css/alley.min.css" target="_blank">Download alley.min.css (0.9KB)</a></p>
+                <p><a href="css/alley.min.css" target="_blank">Download alley.min.css (0.9KB)</a></p>
+            </div>
         </div>
-        <div class="banner light bg1">
-            <div class="content">
+        
+        
+        <div class="row full light banner bg1">
+            <div class="col w1of1">
                 <h1 class="c1" id="layout">Layout</h1>
                 <h2>Responsive multi-column grid</h2>
             </div>
         </div>
-        <div class="section debug flow-s">
-            <div class="row">
-                <div class="col w1of1">col</div>
-            </div>
-            <div class="row flow-m">
-                <div class="col w1of2">col</div>
-                <div class="col w1of2">col</div>
-            </div>
-            <div class="row">
-                <div class="col w1of3">col</div>
-                <div class="col w1of3">col</div>
-                <div class="col w1of3">col</div>
-            </div>
-            <div class="row flow-m">
-                <div class="col w1of4">col</div>
-                <div class="col w1of4">col</div>
-                <div class="col w1of4">col</div>
-                <div class="col w1of4">col</div>
-            </div>
-            <div class="row flow-l">
-                <div class="col w1of5">col</div>
-                <div class="col w1of5">col</div>
-                <div class="col w1of5">col</div>
-                <div class="col w1of5">col</div>
-                <div class="col w1of5">col</div>
-            </div>
-            <div class="row">
-                <div class="col w2of3">col w2of3</div>
-                <div class="col w1of3">col w1of3</div>
-            </div>
-            <div class="row">
-                <div class="col w2of3">
-                    <div class="row flow-m">
-                        <div class="col w1of2">You can nest columns inside each other and have them flow at different breakpoints!</div>
-                        <div class="col w1of2">col w1of3</div>
-                    </div>
+
+        
+        <div class="row">
+            <div class="col w1of1">
+                <div class="row debug">
+                    <div class="col w1of1">col</div>
                 </div>
-                <div class="col w1of3">col width: 200px<br/>Example using fixed width col</div>
-            </div>
-            <div class="row flow-m">
-                <div class="col w1of2">col w1of2</div>
-                <div class="col w1of4">col w1of4</div>
-                <div class="col w1of4">col w1of4</div>
-            </div>
-            <div class="row">
-                <div class="col w2of5">col w2of5</div>
-                <div class="col w1of5">col w1of5</div>
-                <div class="col w1of5">col w1of5</div>
-                <div class="col w1of5">col w1of5</div>
-            </div>
-            <div class="row">
-                <div class="col w3of4"></div>
-                <div class="col w1of4"></div>
-            </div>
-            <div class="row">
-                <div class="col w3of5"></div>
-                <div class="col w1of5"></div>
-                <div class="col w1of5"></div>
-            </div>
-            <div class="row">
-                <div class="col w4of5"></div>
-                <div class="col w1of5"></div>
+                <div class="row debug flow-m">
+                    <div class="col w1of2">col</div>
+                    <div class="col w1of2">col</div>
+                </div>
+                <div class="row debug">
+                    <div class="col w1of3">col</div>
+                    <div class="col w1of3">col</div>
+                    <div class="col w1of3">col</div>
+                </div>
+                <div class="row debug flow-m">
+                    <div class="col w1of4">col</div>
+                    <div class="col w1of4">col</div>
+                    <div class="col w1of4">col</div>
+                    <div class="col w1of4">col</div>
+                </div>
+                <div class="row debug flow-l">
+                    <div class="col w1of5">col</div>
+                    <div class="col w1of5">col</div>
+                    <div class="col w1of5">col</div>
+                    <div class="col w1of5">col</div>
+                    <div class="col w1of5">col</div>
+                </div>
+                <div class="row debug">
+                    <div class="col w2of3">col w2of3</div>
+                    <div class="col w1of3">col w1of3</div>
+                </div>
+                <div class="row debug">
+                    <div class="col w2of3">
+                        <div class="row flow-m">
+                            <div class="col w1of2">You can nest columns inside each other and have them flow at different breakpoints!</div>
+                            <div class="col w1of2">col w1of3</div>
+                        </div>
+                    </div>
+                    <div class="col w1of3">col w1of3</div>
+                </div>
+                <div class="row debug flow-m">
+                    <div class="col w1of2">col w1of2</div>
+                    <div class="col w1of4">col w1of4</div>
+                    <div class="col w1of4">col w1of4</div>
+                </div>
+                <div class="row debug">
+                    <div class="col w2of5">col w2of5</div>
+                    <div class="col w1of5">col w1of5</div>
+                    <div class="col w1of5">col w1of5</div>
+                    <div class="col w1of5">col w1of5</div>
+                </div>
+                <div class="row debug">
+                    <div class="col w3of4"></div>
+                    <div class="col w1of4"></div>
+                </div>
+                <div class="row debug">
+                    <div class="col w3of5"></div>
+                    <div class="col w1of5"></div>
+                    <div class="col w1of5"></div>
+                </div>
+                <div class="row debug">
+                    <div class="col w4of5"></div>
+                    <div class="col w1of5"></div>
+                </div>
             </div>
         </div>
-        <div class="section">
-            <h3>Layout.css</h3>
-            <pre>
+
+        
+        <div class="row">
+            <div class="col w1of1">
+                <h3>Layout.css</h3>
+                <pre>
 .row {
-    margin-right: -20px;
+    max-width: 980px;
+    margin: 0 auto 10px auto;
     overflow: auto;
+}
+
+.row .row {
+    margin: 0 -10px;
 }
 
 .col {
     float: left;
-    padding-right: 20px;
+    padding: 0 10px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }</pre>
-            <p><a href="css/base/layout.css" target="_blank">View (1KB)</a></p>
+                <p><a href="css/base/layout.css" target="_blank">View (1KB)</a></p>
+            </div>
         </div>
-        <div class="banner light bg1">
-            <div class="content">
+        
+        
+        <div class="row full light banner bg1">
+            <div class="col w1of1">
                 <h1 class="c1" id="themes">Themes</h1>
                 <h2>Object-oriented themes</h2>
             </div>
         </div>
-        <div class="section">
-            <div class="row flow-m">
-                <div class="col w1of3 light">
-                    <div class="panel bg1 br1">
-                        <img src="images/alley.jpg" alt="image" class="w1of1" />
-                        <h2 class="c1">Light theme</h2>
-                        <p>This is an example of the same html with a different themes applied to each</p>
-                        <p><a href="#themes" class="c1">Read more</a></p>
-                    </div>
+        
+        
+        <div class="row panel flow-m">
+            <div class="col w1of3 light">
+                <div class="item bg1 br1">
+                    <img src="images/alley.jpg" alt="image" class="w1of1" />
+                    <h2 class="c1">Light theme</h2>
+                    <p>This is an example of the same html with a different themes applied to each</p>
+                    <p><a href="#themes" class="c1">Read more</a></p>
                 </div>
-                <div class="col w1of3">
-                    <div class="panel bg1 br1">
-                        <img src="images/alley.jpg" alt="image" class="w1of1" />
-                        <h2 class="c1">Default theme</h2>
-                        <p>This theme is applied to the entire site by default</p>
-                        <p><a href="#themes" class="c1">Read more</a></p>
-                    </div>
+            </div>
+            <div class="col w1of3">
+                <div class="item bg1 br1">
+                    <img src="images/alley.jpg" alt="image" class="w1of1" />
+                    <h2 class="c1">Default theme</h2>
+                    <p>This theme is applied to the entire site by default</p>
+                    <p><a href="#themes" class="c1">Read more</a></p>
                 </div>
-                <div class="col w1of3 dark">
-                    <div class="panel bg1 br1">
-                        <img src="images/alley.jpg" alt="image" class="w1of1" />
-                        <h2 class="c1">Dark theme</h2>
-                        <p>This is an example of the same html with a different themes applied to each</p>
-                        <p><a href="#themes" class="c1">Read more</a></p>
-                    </div>
+            </div>
+            <div class="col w1of3 dark">
+                <div class="item bg1 br1">
+                    <img src="images/alley.jpg" alt="image" class="w1of1" />
+                    <h2 class="c1">Dark theme</h2>
+                    <p>This is an example of the same html with a different themes applied to each</p>
+                    <p><a href="#themes" class="c1">Read more</a></p>
                 </div>
             </div>
         </div>
-        <div class="section">
-            <h3>Themes.css</h3>
-            <pre>
+
+        
+        <div class="row">
+            <div class="col w1of1">
+                <h3>Themes.css</h3>
+                <pre>
 .dark {
     color: #bbbbbb;
 }
@@ -208,17 +236,23 @@
 .dark .bg2 {
     background-color: #111111;
 }</pre>
-            <p><a href="css/base/themes.css" target="_blank" class="c1">View (3.6KB)</a></p>
+                <p><a href="css/base/themes.css" target="_blank" class="c1">View (3.6KB)</a></p>
+            </div>
         </div>
-        <div class="banner light bg1">
-            <div class="content">
+        
+        
+        <div class="row full light banner bg1">
+            <div class="col w1of1">
                 <h1 class="c1" id="modules">Modules</h1>
                 <h2>Modular javascript with dependancies and inheritance</h2>
             </div>
         </div>
-        <div class="section">
-            <h3>Child.js</h3>
-            <pre>
+        
+        
+        <div class="row">
+            <div class="col w1of1">
+                <h3>Child.js</h3>
+                <pre>
 define('Child', function () {
     return Class.extend({
         init: function (id, options) {
@@ -233,9 +267,9 @@ define('Child', function () {
         }
     });
 });</pre>
-            <p><a href="js/includes/Child.js" target="_blank">View (0.4KB)</a></p>
-            <h3>Parent.js</h3>
-            <pre>
+                <p><a href="js/includes/Child.js" target="_blank">View (0.4KB)</a></p>
+                <h3>Parent.js</h3>
+                <pre>
 define('Parent', ['Child'], function (Child) {
     return Child.extend({
         init: function (id, options) {
@@ -252,189 +286,199 @@ define('Parent', ['Child'], function (Child) {
         }
     });
 });</pre>
-            <p><a href="js/includes/Parent.js" target="_blank">View (0.5KB)</a></p>
+                <p><a href="js/includes/Parent.js" target="_blank">View (0.5KB)</a></p>
+            </div>
         </div>
-        <div class="banner light bg1">
-            <div class="content">
+        
+        
+        <div class="row full light banner bg1">
+            <div class="col w1of1">
                 <h1 class="c1" id="reset">Reset</h1>
                 <h2>Cross browser styles based on yahoo reset</h2>
             </div>
         </div>
-        <div class="section">
-            <h3>Headings &amp; Paragraphs</h3>
-            <div class="row flow-m">
-                <div class="col">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <sub>sub text</sub> ut labore et <sup>sup text</sup> magna aliqua.</p>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        
+        
+        <div class="row">
+            <div class="col w1of1">
+                <h3>Headings &amp; Paragraphs</h3>
+                <div class="row flow-m">
+                    <div class="col">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <sub>sub text</sub> ut labore et <sup>sup text</sup> magna aliqua.</p>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                    <div class="col">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor magna aliqua.</p>
+                        <blockquote>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor magna aliqua.</p>
+                    </div>
+                    <div class="col">
+                        <h1>Heading 1</h1>
+                        <h2>Heading 2</h2>
+                        <h3>Heading 3</h3>
+                        <h4>Heading 4</h4>
+                        <h5>Heading 5</h5>
+                        <h6>Heading 6</h6>
+                        <p>&nbsp;</p>
+                    </div>
                 </div>
-                <div class="col">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor magna aliqua.</p>
-                    <blockquote>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </blockquote>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor magna aliqua.</p>
+                <h3>Lists</h3>
+                <div class="row">
+                    <div class="col">
+                        <ul>
+                            <li>Unordered list test</li>
+                            <li>Another list element. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            <li>Yet another element in the list</li>
+                            <li>Some long text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        </ul>
+                        <ol>
+                            <li>Ordered list test</li>
+                            <li>Another list element</li>
+                            <li>Yet another element in the list</li>
+                        </ol>
+                    </div>
+                    <div class="col">
+                        <ol>
+                            <li>Ordered list</li>
+                            <li>Here's a nested unordered list
+                                <ul>
+                                    <li>Nested Unordered list</li>
+                                    <li>Nested ordered list
+                                        <ol>
+                                            <li>The first</li>
+                                            <li>And the second</li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Ordered List item</li>
+                            <li>Nested Ordered list
+                                <ol>
+                                    <li>Some point</li>
+                                    <li>Nested Unordered list
+                                        <ul>
+                                            <li>The first</li>
+                                            <li>And the second</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="col">
+                        <dl>
+                            <dt>definition list dt</dt>
+                            <dd>definition list dd</dd>
+                            <dt>definition list dt</dt>
+                            <dd>definition list dd</dd>
+                            <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</dt>
+                            <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</dd>
+                            <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</dt>
+                            <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</dd>
+                        </dl>
+                    </div>
                 </div>
-                <div class="col">
-                    <h1>Heading 1</h1>
-                    <h2>Heading 2</h2>
-                    <h3>Heading 3</h3>
-                    <h4>Heading 4</h4>
-                    <h5>Heading 5</h5>
-                    <h6>Heading 6</h6>
-                    <p>&nbsp;</p>
-                </div>
-            </div>
-            <h3>Lists</h3>
-            <div class="row">
-                <div class="col">
-                    <ul>
-                        <li>Unordered list test</li>
-                        <li>Another list element. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                        <li>Yet another element in the list</li>
-                        <li>Some long text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                    </ul>
-                    <ol>
-                        <li>Ordered list test</li>
-                        <li>Another list element</li>
-                        <li>Yet another element in the list</li>
-                    </ol>
-                </div>
-                <div class="col">
-                    <ol>
-                        <li>Ordered list</li>
-                        <li>Here's a nested unordered list
-                            <ul>
-                                <li>Nested Unordered list</li>
-                                <li>Nested ordered list
-                                    <ol>
-                                        <li>The first</li>
-                                        <li>And the second</li>
-                                    </ol>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>Ordered List item</li>
-                        <li>Nested Ordered list
-                            <ol>
-                                <li>Some point</li>
-                                <li>Nested Unordered list
-                                    <ul>
-                                        <li>The first</li>
-                                        <li>And the second</li>
-                                    </ul>
-                                </li>
-                            </ol>
-                        </li>
-                    </ol>
-                </div>
-                <div class="col">
-                    <dl>
-                        <dt>definition list dt</dt>
-                        <dd>definition list dd</dd>
-                        <dt>definition list dt</dt>
-                        <dd>definition list dd</dd>
-                        <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</dt>
-                        <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</dd>
-                        <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</dt>
-                        <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</dd>
-                    </dl>
-                </div>
-            </div>
-            <h3>Other</h3>
-            <div class="row">
-                <div class="col">
-                    <p>
-                        <strong>&lt;strong&gt;</strong><br>
-                        <del>&lt;del&gt; deleted</del><br>
-                        <dfn>&lt;dfn&gt; dfn</dfn><br>
-                        <em>&lt;em&gt; emphasis</em>
-                    </p>
-                    <p>
-                        <a>&lt;a&gt; anchor</a><br>
-                        <a href="http://www.google.com">&lt;a&gt; a + href</a>
-                    </p>
-                    <p>
-                        <abbr title="extended abbr text should show when mouse over">&lt;abbr&gt; abbr - extended text when mouseover.</abbr>
-                    </p>
-                    <address>
-                        &lt;address&gt;<br>
-                        Donald Duck<br>
-                        Box 555<br>
-                        Disneyland
-                    </address>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore.</p>
-                </div>
-                <div class="col">
-                    <table>
-                        <caption><em>A standard test table with a caption, tr, td elements</em></caption>
-                        <tr>
-                            <th class="span-4">Table Header One</th>
-                            <th class="span-4 last">Table Header Two</th>
-                        </tr>
-                        <tr>
-                            <td>TD One</td>
-                            <td>TD Two</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">TD colspan 2</td>
-                        </tr>
-                    </table>
-                    <table>
-                        <caption><em>A test table with a thead, tfoot, and tbody elements</em></caption>
-                        <thead>
+                <h3>Other</h3>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            <strong>&lt;strong&gt;</strong><br>
+                            <del>&lt;del&gt; deleted</del><br>
+                            <dfn>&lt;dfn&gt; dfn</dfn><br>
+                            <em>&lt;em&gt; emphasis</em>
+                        </p>
+                        <p>
+                            <a>&lt;a&gt; anchor</a><br>
+                            <a href="http://www.google.com">&lt;a&gt; a + href</a>
+                        </p>
+                        <p>
+                            <abbr title="extended abbr text should show when mouse over">&lt;abbr&gt; abbr - extended text when mouseover.</abbr>
+                        </p>
+                        <address>
+                            &lt;address&gt;<br>
+                            Donald Duck<br>
+                            Box 555<br>
+                            Disneyland
+                        </address>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore.</p>
+                    </div>
+                    <div class="col">
+                        <table>
+                            <caption><em>A standard test table with a caption, tr, td elements</em></caption>
                             <tr>
                                 <th class="span-4">Table Header One</th>
                                 <th class="span-4 last">Table Header Two</th>
                             </tr>
-                        </thead>
-                        <tfoot>
-                            <tr>
-                                <td colspan="2">tfoot footer</td>
-                            </tr>
-                        </tfoot>
-                        <tbody>
                             <tr>
                                 <td>TD One</td>
                                 <td>TD Two</td>
                             </tr>
                             <tr>
-                                <td>TD One</td>
-                                <td>TD Two</td>
+                                <td colspan="2">TD colspan 2</td>
                             </tr>
-                        </tbody>
-                        <tbody>
-                            <tr>
-                                <td>TD One</td>
-                                <td>TD Two</td>
-                            </tr>
-                            <tr>
-                                <td>TD One</td>
-                                <td>TD Two</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col">
-                    <pre>
+                        </table>
+                        <table>
+                            <caption><em>A test table with a thead, tfoot, and tbody elements</em></caption>
+                            <thead>
+                                <tr>
+                                    <th class="span-4">Table Header One</th>
+                                    <th class="span-4 last">Table Header Two</th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2">tfoot footer</td>
+                                </tr>
+                            </tfoot>
+                            <tbody>
+                                <tr>
+                                    <td>TD One</td>
+                                    <td>TD Two</td>
+                                </tr>
+                                <tr>
+                                    <td>TD One</td>
+                                    <td>TD Two</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>TD One</td>
+                                    <td>TD Two</td>
+                                </tr>
+                                <tr>
+                                    <td>TD One</td>
+                                    <td>TD Two</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col">
+                        <pre>
 pre  space1
 pre  space1
 pre    space2
 pre    space2
 pre tab
 pre tab</pre>
-                    <code>&lt;code&gt;
-                        Not indented
-                        indent1
-                        indent1
-                        indent2
-                        indent3</code>
+                        <code>&lt;code&gt;
+                            Not indented
+                            indent1
+                            indent1
+                            indent2
+                            indent3</code>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="section">
-            <h3>Reset.css</h3>
-            <pre>
+        
+        
+        <div class="row">
+            <div class="col w1of1">
+                <h3>Reset.css</h3>
+                <pre>
 body {
     margin: 0;
     overflow-x: hidden;
@@ -466,8 +510,11 @@ form, input, textarea, select, fieldset {
     font-size: inherit;
     font-weight: inherit;
 }</pre>
-            <p><a href="css/base/reset.css" target="_blank">View (0.4KB)</a></p>
+                <p><a href="css/base/reset.css" target="_blank">View (0.4KB)</a></p>
+            </div>
         </div>
+
+        
         <script src="js/includes/Class.js"></script>
 		<script src="js/includes/Events.js"></script>
         <script src="js/includes/Child.js"></script>

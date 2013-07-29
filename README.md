@@ -43,18 +43,23 @@ Respond columns at common breakpoints
 
 Layout css example:
 
-	.row {
-		margin-right: -20px;
-		overflow: auto;
-	}
-	
-	.col {
-		float: left;
-		padding-right: 20px;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
-	}
+    .row {
+        max-width: 980px;
+        margin: 0 auto 10px auto;
+        overflow: auto;
+    }
+    
+    .row .row {
+        margin: 0 -10px;
+    }
+    
+    .col {
+        float: left;
+        padding: 0 10px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
 
 Themes css example:
 

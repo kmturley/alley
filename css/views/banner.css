@@ -3,8 +3,9 @@
     css styles specific to this module only
 */
 
-.banner {
-
+.banner .col {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .banner h1 {
@@ -17,12 +18,6 @@
     margin-top: -300px;
 }
 
-.banner .content {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px 20px 20px 20px;
-}
-
 .banner.home {
     background-image: url('../../images/alley.jpg');
     background-position: 49% 49%;
@@ -30,8 +25,9 @@
     background-size: cover;
 }
 
-.banner.home .content {
-    padding: 300px 20px 50px 20px;
+.banner.home .col {
+    padding-top: 300px;
+    padding-bottom: 50px;
     text-shadow: 1px 1px 7px #000000;
     filter: dropshadow(color=#000000, offx=1, offy=1);
 }
