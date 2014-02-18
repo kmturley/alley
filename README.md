@@ -46,13 +46,13 @@ Layout css example:
     .row {
         max-width: 980px;
         margin: 0 auto 10px auto;
-        overflow: auto;
+        overflow: hidden;
     }
-    
+
     .row .row {
-        margin: 0 -10px;
+        margin: 0 -10px 10px -10px;
     }
-    
+
     .col {
         float: left;
         padding: 0 10px;
