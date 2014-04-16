@@ -132,11 +132,11 @@
         </div>
         
     </div>
-    <script src="js/base/skrollr.min.js"></script>
+    <script src="js/base/TouchScroll.js"></script>
     <script>
-        var s = skrollr.init({
-            forceHeight: false,
-            smoothScrolling: false
+        var touchscroll = new TouchScroll();
+        touchscroll.load({
+            'element': document.getElementsByTagName('body')[0]
         });
     </script>
 </body>
