@@ -96,7 +96,7 @@
         <div class="bg bg1" data-0="background-position: 0px -400px;" data-end="background-position: 0px 0px;"></div>
         
         <div class="anchor" id="wide"></div>
-        <div class="green wide">
+        <div class="green wide" id="test">
             <div class="content">
                 <div class="t">
                     <div class="tc">
@@ -132,12 +132,16 @@
         </div>
         
     </div>
-    <script src="js/base/TouchScroll.js"></script>
+    <script src="js/RequestAnimationFrame.js"></script>
+    <script src="js/TouchScroll.js"></script>
     <script>
-        var touchscroll = new TouchScroll();
-        touchscroll.load({
-            'element': document.getElementsByTagName('body')[0]
-        });
+        // example running touch scroll on the body
+        var touch = new TouchScroll();
+        touch.init();
+        
+        // example running touch scroll on a specific element
+        var touch2 = new TouchScroll();
+        touch2.init({id: 'test'});
     </script>
 </body>
 </html>
