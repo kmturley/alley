@@ -37,19 +37,8 @@ var TouchScroll = function () {
                 el[name] = func;
             }
         },
-        preventEvent: function (e) {
-            if (!e) {
-                e = window.event;
-            }
-            if (e.preventDefault) {
-                e.preventDefault();
-            } else {
-                e.returnValue = false;
-            }
-            return e;
-        },
         onMouseDown: function (e) {
-            e = this.preventEvent(e);
+            if (!e) { e = window.event; }
             this.startx = e.clientX + this.el.scrollLeft;
             this.starty = e.clientY + this.el.scrollTop;
             this.diffx = 0;
@@ -58,7 +47,7 @@ var TouchScroll = function () {
         },
         onMouseMove: function (e) {
             if (this.drag === true) {
-                e = this.preventEvent(e);
+                if (!e) { e = window.event; }
                 this.diffx = (this.startx - (e.clientX + this.el.scrollLeft));
                 this.diffy = (this.starty - (e.clientY + this.el.scrollTop));
                 this.el.scrollLeft += this.diffx;
@@ -66,7 +55,7 @@ var TouchScroll = function () {
             }
         },
         onMouseUp: function (e) {
-            this.preventEvent(e);
+            if (!e) { e = window.event; }
             this.drag = false;
             var me = this,
                 start = 1,
