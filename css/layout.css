@@ -23,16 +23,6 @@
     box-sizing: border-box;
 }
 
-.full {
-    max-width: 100%;
-}
-
-.full .col {
-    max-width: 980px;
-    margin: 0 auto;
-    float: none;
-}
-
 /* width helpers */
 
 .w1of1 { width: 100%; }
