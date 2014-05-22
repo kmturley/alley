@@ -45,7 +45,13 @@ img {
 
 /* backgrounds */
 
-.bg1 { height: 500px; background-image: url('../img/alley.jpg'); }
+.bg1 {
+    height: 400px;
+    background-image: url('../img/alley.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: #000;
+}
 
 /* colours */
 
