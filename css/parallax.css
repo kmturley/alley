@@ -1,0 +1,97 @@
+/*
+ * Parallax
+ */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    height: 100%;
+    -webkit-perspective: 100px;
+    perspective: 100px;
+    -webkit-perspective-origin: 0 0;
+    perspective-origin: 0 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.header {
+    -webkit-box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.2);
+    background-color: #fff;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.header p {
+    margin: 0;
+    padding: 10px;
+}
+
+/* banner */
+
+.banner {
+    margin-top: 41px;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d; /* firefox requires this for children */
+    z-index: -1;
+}
+
+.banner .content {
+    background-color: #fafafa;
+    padding: 1rem;
+}
+
+.banner .content *:last-child {
+    margin-bottom: 0;
+}
+
+.banner .image img {
+    width: 100%;
+}
+
+.main {
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* 30em = 480px */
+
+@media (min-width: 30em) {
+    .banner {
+        margin-top: 47px; 
+    }
+    
+    .banner .content {
+        align-items: center;
+        background-color: transparent;
+        color: #fff;
+        display: flex;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    .banner .image {
+        background-color: #000;
+        position: relative;
+    }
+    
+    .banner .image img {
+        opacity: 0.6;
+        -webkit-transform: translate3d(25%,25%,-50px) scale(1.51);
+        transform: translate3d(25%,25%,-50px) scale(1.51);
+        width: 100%;
+    }
+}
