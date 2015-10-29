@@ -1,0 +1,13 @@
+/*
+ * Banner
+ */
+
+.banner {
+    background-color: #000;
+    padding: 3em 0 0 0;
+}
+
+.banner img {
+    display: block;
+    max-width: 100%;
+}
