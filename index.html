@@ -5,139 +5,67 @@
     <title>Alley</title>
     <meta name="description" content="" />
     <meta name=viewport content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/themes.css" />
+    <link rel="stylesheet" href="css/banner.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/section.css" />
+    <link rel="stylesheet" href="css/type.css" />
+    <link rel="stylesheet" href="css/debug.css" />
 </head>
-<body class="flow-s no-select">
-
-    <div class="header grey">
-        <a href="https://github.com/kmturley/alley" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
-        <div class="row">
-            <ul>
-                <li><a href="#auto">Alley</a></li>
-                <li><a href="#fit">Fit height</a></li>
-                <li><a href="#wide">Aspect wide</a></li>
-            </ul>
-        </div>
+<body>
+    <div class="header">
+        <a href="#" class="logo">alley</a>
+        <ul>
+            <li class="btn"><a href="#" class="btn-link">&#9776;</a>
+                <ul class="menu">
+                    <li><a href="#wide">Widescreen</a></li>
+                    <li><a href="#grid">Grid</a></li>
+                    <li><a href="#ratio">Fit ratio</a></li>
+                </ul>
+            </li>
+        </ul>
     </div>
-    
-    <div class="container box">
-        <div class="anchor" id="header"></div>
-        <div class="bg1">
-            <div class="row">
-            </div>
-        </div>
-        <div class="anchor" id="auto"></div>
-        <div class="red">
-            <div class="row">
-                <h2>Section auto</h2>
-                <p>Click and drag the page to see the TouchScroll plugin in action. Vivamus mauris ligula, tincidunt nec risus nec, elementum mollis quam. Nunc dictum ligula eu metus convallis sollicitudin. Mauris porta rhoncus ultrices. Aenean mauris lacus, lobortis sit amet lorem eu.</p>
-                <div class="row debug">
-                    <div class="col w1of2">col w1of2</div>
-                    <div class="col w1of2">col w1of2</div>
-                </div>
-                <div class="row debug">
-                    <div class="col w1of3">col w1of3</div>
-                    <div class="col w1of3">col w1of3</div>
-                    <div class="col w1of3">col w1of3</div>
-                </div>
-                <div class="row debug">
-                    <div class="col w2of3">col w2of3</div>
-                    <div class="col w1of3">col w1of3</div>
-                </div>
-                <div class="row debug">
-                    <div class="col w2of3">
-                        <div class="row">
-                            <div class="col w1of2">You can nest columns inside each other and have them flow at different breakpoints!</div>
-                            <div class="col w1of2">col w1of3</div>
-                        </div>
-                    </div>
-                    <div class="col w1of3">col w1of3</div>
-                </div>
-            </div>
-        </div>
-        <div class="anchor" id="fit"></div>
-        <div class="yellow tall">
+    <div class="section fit-widescreen banner" id="wide">
+        <div class="inner">
             <div class="t">
                 <div class="tc">
-                    <div class="row">
-                        <h2>Section fit height</h2>
-                        <p>Click and drag the page to see the TouchScroll plugin in action. Vivamus mauris ligula, tincidunt nec risus nec, elementum mollis quam. Nunc dictum ligula eu metus convallis sollicitudin. Mauris porta rhoncus ultrices. Aenean mauris lacus, lobortis sit amet lorem eu, tempor euismod ipsum.</p>
-                        <div class="row debug">
-                            <div class="col w1of2">col w1of2</div>
-                            <div class="col w1of2">col w1of2</div>
-                        </div>
-                        <div class="row debug">
-                            <div class="col w1of3">col w1of3</div>
-                            <div class="col w1of3">col w1of3</div>
-                            <div class="col w1of3">col w1of3</div>
-                        </div>
-                        <div class="row debug">
-                            <div class="col w2of3">col w2of3</div>
-                            <div class="col w1of3">col w1of3</div>
-                        </div>
-                        <div class="row debug">
-                            <div class="col w2of3">
-                                <div class="row">
-                                    <div class="col w1of2">You can nest columns inside each other and have them flow at different breakpoints!</div>
-                                    <div class="col w1of2">col w1of3</div>
-                                </div>
-                            </div>
-                            <div class="col w1of3">col w1of3</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="anchor" id="wide"></div>
-        <div class="green wide" id="test">
-            <div class="content">
-                <div class="t">
-                    <div class="tc">
-                        <div class="row">
-                            <h2>Section aspect wide</h2>
-                            <p>Click and drag the page to see the TouchScroll plugin in action. Vivamus mauris ligula, tincidunt nec risus nec, elementum mollis quam. Nunc dictum ligula eu metus convallis sollicitudin. Mauris porta rhoncus ultrices. Aenean mauris lacus, lobortis sit amet lorem eu, tempor euismod ipsum.</p>
-                            <div class="row debug">
-                                <div class="col w1of2">col w1of2</div>
-                                <div class="col w1of2">col w1of2</div>
-                            </div>
-                            <div class="row debug">
-                                <div class="col w1of3">col w1of3</div>
-                                <div class="col w1of3">col w1of3</div>
-                                <div class="col w1of3">col w1of3</div>
-                            </div>
-                            <div class="row debug">
-                                <div class="col w2of3">col w2of3</div>
-                                <div class="col w1of3">col w1of3</div>
-                            </div>
-                            <div class="row debug">
-                                <div class="col w2of3">
-                                    <div class="row">
-                                        <div class="col w1of2">You can nest columns inside each other and have them flow at different breakpoints!</div>
-                                        <div class="col w1of2">col w1of3</div>
-                                    </div>
-                                </div>
-                                <div class="col w1of3">col w1of3</div>
-                            </div>
-                        </div>
-                    </div>
+                    <h1 class="title">Morbi at nunc</h1>
                 </div>
             </div>
         </div>
     </div>
-    
-    <script src="js/RequestAnimationFrame.js"></script>
-    <script src="js/TouchScroll.js"></script>
-    <script>
-        // example running touch scroll on the body
-        var touch = new TouchScroll();
-        touch.init();
-        
-        // example running touch scroll on a specific element
-        var touch2 = new TouchScroll();
-        touch2.init({id: 'test'});
-    </script>
+    <div class="section debug" id="grid">
+        <h2>Lorem ipsum dolor adipiscing</h2>
+        <p>Vestibulum sed orci eu dolor dignissim molestie. Curabitur eu orci libero. Ut molestie porta tellus sed rutrum. Suspendisse tristique est cursus neque bibendum gravida.</p>
+        <p>Aenean est lorem, bibendum vestibulum lectus non, varius tempus ligula. Morbi at nunc vel diam dictum eleifend et ut est. Sed sed justo rutrum, fringilla est a, iaculis nulla. Cras tincidunt magna quis ex interdum, sed malesuada purus rutrum. Quisque finibus odio tortor, id aliquam mi iaculis a.</p>
+        <div class="row">
+            <div class="col w1of2"><p>col w1of2</p></div>
+            <div class="col w1of2"><p>col w1of2</p></div>
+        </div>
+        <div class="row">
+            <div class="col w1of3"><p>col w1of3</p></div>
+            <div class="col w1of3"><p>col w1of3</p></div>
+            <div class="col w1of3"><p>col w1of3</p></div>
+        </div>
+        <div class="row">
+            <div class="col w2of3"><p>col w2of3</p></div>
+            <div class="col w1of3"><p>col w1of3</p></div>
+        </div>
+        <div class="row">
+            <div class="col w2of3">
+                <div class="row">
+                    <div class="col w1of2"><p>col w1of2 - You can nest columns inside each other!</p></div>
+                    <div class="col w1of2"><p>col w1of2</p></div>
+                </div>
+            </div>
+            <div class="col w1of3"><p>col w1of3</p></div>
+        </div>
+    </div>
+    <div class="section fit-height fit-width red" id="ratio">
+        <div class="t">
+            <div class="tc">
+                <h2>Fit height &amp; width</h2>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
