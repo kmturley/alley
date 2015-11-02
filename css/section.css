@@ -3,14 +3,25 @@
  */
 
 html,
-body {
+body,
+.main {
     height: 100%;
     margin: 0;
+}
+
+.main {
+    box-sizing: border-box;
+    padding-top: 3em;
 }
 
 .section {
     box-sizing: border-box;
     padding: 1em;
+}
+
+.anchor {
+    margin-top: -3em;
+    padding-top: 3em;
 }
 
 .section.red {
