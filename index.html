@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/banner.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/tabs.css" />
     <link rel="stylesheet" href="css/type.css" />
     <link rel="stylesheet" href="css/debug.css" />
 </head>
@@ -18,6 +19,7 @@
             <li class="btn"><a href="#" class="btn-link">&#9776;</a>
                 <ul class="menu">
                     <li><a href="#wide">Widescreen</a></li>
+                    <li><a href="#tabs">Tabs</a></li>
                     <li><a href="#grid">Grid</a></li>
                     <li><a href="#ratio">Fit ratio</a></li>
                 </ul>
@@ -33,6 +35,20 @@
                         <h1 class="title">Morbi at nunc</h1>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="anchor" id="tabs"></div>
+        <div class="section tabs tabs-full">
+            <input id="tab1" type="radio" name="tabs" checked />
+            <label for="tab1">About</label>
+            <input id="tab2" type="radio" name="tabs" />
+            <label for="tab2">Features</label>
+            <input id="tab3" type="radio" name="tabs" />
+            <label for="tab3">Contact</label>
+            <div class="tabs-wrap">
+                <div class="tab" id="tab1content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur viverra dui, id egestas metus fringilla et. Ut vitae magna et diam pharetra volutpat ut vitae odio.</p></div>
+                <div class="tab" id="tab2content"><p>Nunc vel sem venenatis, congue mauris sed</p></div>
+                <div class="tab" id="tab3content"><p>Quisque pellentesque nibh massa. Integer sollicitudin neque metus</p></div>
             </div>
         </div>
         <div class="anchor" id="grid"></div>

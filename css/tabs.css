@@ -1,0 +1,54 @@
+/*
+ * Tabs
+ */
+
+.tabs {
+    padding: 0;
+}
+
+.tabs input {
+    display: none;
+}
+
+.tabs label {
+    color: #ddd;
+    cursor: pointer;
+    float: left;
+    padding: 1em;
+    text-align: center;
+}
+
+.tabs-full label {
+    display: table-cell;
+    float: none;
+    width: 1%;
+}
+
+.tabs label:hover {
+    color: #333;
+}
+
+.tabs input:checked + label {
+    background-color: #fff;
+    color: #333;
+}
+
+.tabs .tabs-wrap {
+    clear: both;
+}
+
+.tabs .tab {
+    background-color: #fff;
+    display: none;
+    padding: 1em;
+}
+
+.tabs .tab > *:last-child {
+    margin-bottom: 0;
+}
+
+#tab1:checked ~ .tabs-wrap #tab1content,
+#tab2:checked ~ .tabs-wrap #tab2content,
+#tab3:checked ~ .tabs-wrap #tab3content {
+    display: block;
+}
