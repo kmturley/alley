@@ -1,3 +1,5 @@
+![alt tag](https://kmturley.github.io/alley/img/screenshot.png)
+
 # Alley
 
 Responsive, cross-browser, starter template. Only 1KB for the layout, grid and typography css. Tested working on Firefox, Safari, Chrome, IE9+. Using ratios and percentages which adapt and reflow with your browser/screen size. Use oocss reusable themes, keeping your layout and styling separate.
